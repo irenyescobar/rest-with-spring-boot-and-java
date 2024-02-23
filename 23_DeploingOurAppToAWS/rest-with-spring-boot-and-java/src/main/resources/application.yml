@@ -3,7 +3,8 @@ server:
 cors:
   originPatterns: http://localhost:3000,http://localhost:8080,https://erudio.com.br
 file:
-  upload-dir: /Users/irenyescobar/Documents/cursos/java/uploads  
+  upload-dir: /home/ireny/Documentos/Cursos/uploads #debian
+  # upload-dir: /Users/irenyescobar/Documents/cursos/java/uploads  #mac
 security:
   jwt:
     token:

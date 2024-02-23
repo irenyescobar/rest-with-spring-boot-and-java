@@ -3,6 +3,9 @@ server:
 cors:
   originPatterns: http://localhost:3000,http://localhost:8080,https://erudio.com.br
 file:
+  #upload-dir: /home/ireny/Documentos/Cursos/uploads #debian local
+  #upload-dir: /Users/irenyescobar/Documents/cursos/java/uploads  #mac local
+  #upload-dir: /home/rest-with-spring-boot-and-java/UploadDir #docker debian local
   upload-dir: /home/runner/work/rest-with-spring-boot-and-java/UploadDir
 security:
   jwt:

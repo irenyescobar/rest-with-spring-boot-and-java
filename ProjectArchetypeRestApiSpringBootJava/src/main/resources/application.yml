@@ -1,0 +1,38 @@
+server:
+  port: 80
+cors:
+  originPatterns: http://localhost:3000,http://localhost:8080,https://erudio.com.br
+file:
+  upload-dir: /home/ireny/Documentos/Cursos/uploads #debian
+  # upload-dir: /Users/irenyescobar/Documents/cursos/java/uploads  #mac
+security:
+  jwt:
+    token:
+      secret-key: 53cr37
+      expire-length: 3600000  
+spring:
+  datasource: 
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://rest-with-spring-boot.cd6cu4s2stuv.us-east-1.rds.amazonaws.com:3306/rest_with_spring_boot?useTimezone=true&serverTimezone=UTC
+    username: docker
+    password: docker123
+  jpa:
+    open-in-view: false
+    hibernate:
+      ddl-auto: none
+    # properties:
+      # hibernate:
+        # dialect: org.hibernate.dialect.MySQLDialect
+    show-sql: false
+  servlet:
+    multipart:
+      enabled: true
+      file-size-threshold: 2KB
+      max-file-size: 200MB
+      max-request-size: 215MB  
+springdoc:
+  pathsToMatch: 
+   - /auth/**
+   - /api/**/v1/**
+  swagger-ui:
+    use-root-path: true   
